@@ -13,9 +13,17 @@ const Users = () => {
       <h3>user list</h3>
       <ul>
         {users.map((user) => (
-          <Link href={`/users/${user.id}`}><li key={user.id}>{user.name}</li></Link>
+          <Link href={`/users/${user.id}`}>
+            <li key={user.id}>{user.name}</li>
+          </Link>
         ))}
       </ul>
+      <style jsx>{`
+        h3 {
+          background-color: red;
+          color: blue;
+        }
+      `}</style>
     </div>
   );
 };

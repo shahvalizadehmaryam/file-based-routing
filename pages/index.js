@@ -20,6 +20,12 @@ export default function Home() {
         <p>Go to users</p>
       </Link>
       <button onClick={loginHandler}>Log in</button>
+      <style jsx>{`
+        h3 {
+          background-color: red;
+          color: blue;
+        }
+      `}</style>
     </div>
   );
 }
